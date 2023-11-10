@@ -1,0 +1,310 @@
+/* @import url('https://www.surgolink.com/externalcss/wiki.css?v=1'); */
+.v-main .contents a {
+	color: #309cf2 !important;
+}
+
+/*
+Theme overrides by Reess Kennedy
+*/
+
+/* https://perishablepress.com/obsessive-css-code-formatting-organization-comments-and-signatures/ */
+
+/*** HEADER ***/   
+
+
+
+
+/*** TITLE AREA ***/ 
+
+/* Not sure what to do with this AREA
+It's not an h1 in this area which is not great for SEO? 
+You either minimize this area or hide it and always use an h1
+Or you make this this page header and make it bolder
+and bigger ... 
+Choosing bolder and bigger now since it's annoying 
+to have to choose a new h1 each time you create a new page
+*/
+.v-application .headline {
+    font-size: 1.8rem!important;
+    letter-spacing: normal!important;
+    
+    font-weight: 800;    
+}
+.page-header-section .page-header-headings {
+    min-height: 100% !important; /* This also had a minimum height which this eliminates now -- no idea how this will look on mobile though */
+}   
+.page-header-section .page-edit-shortcuts {
+    position: absolute;
+    bottom: 0px; /* Nice */
+    right: 10px;
+}
+.page-header-section .page-edit-shortcuts .v-btn:last-child {
+		border: 1px solid #9e9e9e !important;
+		padding: 8px !important;
+}
+.page-header-section .page-header-headings .page-edit-shortcuts button {
+	border: 1px solid #ddd !important;
+}
+/** Color to white for main header **/
+.v-application .grey--text.text--lighten-2 {
+    color: #fff !important; 
+    
+    /** Color to white for main header **/!important;
+    caret-color: #e0e0e0!important;
+}
+
+.page-header-section {
+	height: 100% !important; /** Default is 90px so change this to just fit the size of containing so padding can be properly changed */
+	padding-top: 30px;
+	padding-bottom: 0px;
+}
+hr[role="separator"]  {
+	display: none !important;
+	color: yellow;
+}
+
+
+
+/*** BREADCRUMBS  ***/ 
+.v-btn:not(.v-btn--round).v-size--small {
+    height: 28px;
+    min-width: 50px;
+    
+    padding: 0 1px !important;
+}
+
+
+#root .v-application .grey.darken-4-l3 {
+    background-color: transparent !important;
+    border-color: #292929 !important;
+}
+
+/*** RIGHT SIDEBAR ***/
+.page-col-sd {
+	/* Was at -91px but had to nudge up a bit to improve more */
+    margin-top: -95px;
+}   
+.page-col-sd .v-chip.v-size--default {
+    border-radius: 40px;
+    font-size: 12px;
+    height: 22px;
+}
+
+/* Tags in right sidebar */
+body .page-col-sd .teal.darken-1 {
+    background-color: #2196f36b !important;
+    border-color: #2196f3 !important;
+    color: #fff;
+}
+body .page-col-sd .teal.darken-1 i {
+	font-size: 12px !important;
+}	
+.v-application .teal--text.text--lighten-3 {
+    color: #fff !important;
+    caret-color: #fff !important;
+}
+
+
+/* Might be global? */
+
+
+/** Remove page header **/
+.page-toc-card .overline {
+  display: none;
+}
+
+.page-toc-card i.v-icon {
+  xdisplay: none !important;
+}	
+.page-toc-card .mdi-chevron-right:before {
+    content: "";
+    xdisplay: none;
+}
+.page-toc-card .mdi-chevron-right:after {
+	display: none;
+}	
+
+.page-col-sd {
+	xbackground: red;
+	background: #171717;
+}
+.v-sheet.v-card {
+    border-radius: 0px !important;
+    border: 0px solid #fff;
+	background: #171717;
+    background-color: #171717;
+    
+    xbackground: red;
+    background: #171717;
+}
+.theme--dark.v-card {
+    xbackground-color: red !important;
+    background-color: #171717 !important;
+    color: #fff;
+}
+.v-sheet.v-card:not(.v-sheet--outlined) {
+    box-shadow: none !important;
+}
+.v-list--dense .v-list-item, .v-list-item--dense {
+    min-height: 20px !important;
+}
+.v-application .px-3 {
+    padding-right: 12px!important;
+    padding-left: 5px!important;
+}
+/* Hide the toolbar */
+.page-col-sd .v-toolbar {
+	display: none !important;
+}
+.theme--dark.v-list {
+    background: #1e1e1e;
+    background-color: #171717 !important;    
+    color: #fff;
+}
+
+/** No need for background on footer text and should be dimmed */
+.v-application .grey.darken-3 {
+    background-color: transparent !important;
+    border-color: transparent !important;
+    
+   color: #9e9e9e !important;
+}
+
+
+/** Hide the big discussion button */
+.page-comments-card button:nth-child(1) {
+	display: none;
+
+	
+}
+.page-comments-card .ml-2 {
+	margin-left: 0px !important;
+}	
+/** Overriding the upercase value */
+.v-application .overline {
+	text-transform: none !important;	
+}	
+
+
+
+/*** LEFT SIDEBAR ***/
+
+/** These had been just white and was trying to make them "mac folder blue"
+And then changed docs too and all icons and definitely good a different color
+**/
+
+/** Changed this to just impact left sidebar **/
+.v-navigation-drawer__content .theme--dark.v-icon.mdi-folder {
+    color: #0886da !important;
+}
+.v-navigation-drawer__content .theme--dark.v-icon.mdi-text-box {
+    color: #9e9e9e !important;
+}
+
+/** Removing large space between icon and link */
+.v-application--is-ltr .v-list-item__avatar:first-child, 
+.v-application--is-rtl .v-list-item__action:last-of-type:not(:only-child), 
+.v-application--is-rtl .v-list-item__avatar:last-of-type:not(:only-child), 
+.v-application--is-rtl .v-list-item__icon:last-of-type:not(:only-child) 
+{
+    margin-right: 7px !important;
+}
+
+
+/* Reove this button */
+button[aria-label="Home"] {
+	display: none !important;
+}
+/* Remove padding left from navigation button */
+.v-navigation-drawer__content button:nth-child(2) {
+	padding-left: 0px;
+	margin-left: 0px !important;
+}
+/* Added "pages" after browse 
+Could be "content" or "folders" or "wiki" ... not sure
+*/
+i.mdi-file-tree + div:after {
+	content: " Pages";	
+}
+
+
+
+/** Changing the weird large icon that looks like some nonstandard navigation or atlas related thing -- not sure */
+.mdi-navigation:before {
+    content: "←";
+}
+
+/*** BODY ***/
+.theme--dark .v-main .contents h1:after {
+    background: linear-gradient(90deg,#64b5f6,#2196f3 10%,rgba(13,71,161,0));
+    
+    background: none;
+}
+.
+
+.theme--dark .v-main .contents h2 {
+	color: #fff;
+	xborder-bottom: 1px solid #ddd;
+}
+.theme--dark .v-main .contents h2:after {
+    background: linear-gradient(90deg,#e0e0e0,rgba(97,97,97,0));
+    background: none;
+}
+.v-main .contents blockquote p {
+    padding: 1rem 0 0;	
+}	
+.v-main .contents p {
+	/* Smaller top padding and added bottom 
+	-- just top padding felt weird 
+	*/
+    padding: .5rem 0 .5rem 0;
+}
+
+
+
+.v-main .contents h3 {
+	margin-top: 20px;
+	color: #fff !important;
+}
+.contents h3:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg,#9e9e9e,hsla(0,0%,62%,0) 90%);
+    
+    background: none !important;
+}
+
+.v-main .contents ul {
+  padding-top: .5rem !important;
+  padding-left: 1rem !important;
+}
+.v-main .contents ul:not(.tabset-tabs):not(.contains-task-list)>li:before {
+    position: absolute;
+    left: -.8rem;
+    color: #757575;
+    width: 1.15rem;
+    content: "•";
+    color: orange;
+    font-weight: 900 !important;
+}
+#root .v-application .overline {
+    line-height: 1rem;
+    font-size: .625rem!important;
+    font-weight: 400;
+    
+    /* Removed spacing between letters - 
+    Spacing between letters is something I used to xborder-bottom
+    Now it feels like it's random and trying too hard
+    */
+    letter-spacing: 0em!important;
+}
+   
+   
+   
+
+
+
