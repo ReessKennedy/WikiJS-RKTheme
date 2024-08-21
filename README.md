@@ -1,3 +1,5 @@
+> RK Update 2024-08: Stopped using WikiJs ... cool tool but editor is slow and more modern and faster ones, it seemed .. also didn't support Obsidian Wikilinks but has some amazing concepts and features like page tagging and showing the full page lists for files. 
+
 Github link: https://github.com/ReessKennedy/WikiJS-RKTheme
 ## What ⚡
 Style (CSS) alterations for js.wiki. 
